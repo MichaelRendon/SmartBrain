@@ -98,7 +98,7 @@ onButtonSubmit = () => {
   .then(response => response.json())
 	.then(response => {
     if (response) {
-      fetch('https://arrogant-poutine-39005.herokuapp.com:3000/image', {
+      fetch('https://arrogant-poutine-39005.herokuapp.com/image', {
         method: 'put',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({
